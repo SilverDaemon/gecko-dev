@@ -2118,9 +2118,9 @@ bool Navigator::Webdriver() {
   if (marionette) {
     bool marionetteRunning = false;
     marionette->GetRunning(&marionetteRunning);
-    if (marionetteRunning) {
-      return true;
-    }
+    // if (marionetteRunning) {
+    //   return true;
+    // }
   }
 
   nsCOMPtr<nsIRemoteAgent> agent = do_GetService(NS_REMOTEAGENT_CONTRACTID);
