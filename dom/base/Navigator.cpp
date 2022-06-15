@@ -2127,9 +2127,9 @@ bool Navigator::Webdriver() {
   if (agent) {
     bool remoteAgentListening = false;
     agent->GetListening(&remoteAgentListening);
-    if (remoteAgentListening) {
-      return true;
-    }
+    // if (remoteAgentListening) {
+    //   return true;
+    // }
   }
 #endif
 
